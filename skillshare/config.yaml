@@ -1,0 +1,12 @@
+# Configuración de runkids/skillshare para Claude Code, Codex y OpenCode.
+# El directorio skillshare/skills/ empieza vacío: añade allí tus propias skills.
+targets:
+  - name: claude
+    mode: copy
+  - name: codex
+    mode: copy
+  - name: opencode
+    mode: copy
+
+# Dependencias remotas opcionales. Sin skills preinstaladas.
+skills: []

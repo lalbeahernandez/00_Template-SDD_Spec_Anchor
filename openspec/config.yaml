@@ -1,0 +1,26 @@
+# Configuración base para proyectos nuevos; revisar antes de ejecutar openspec init.
+schema: spec-driven
+context: |
+  Redactar en español. Usar solo el stack, las rutas y los comandos comprobados.
+  Seguir los AGENTS.md aplicables como fuente de reglas de trabajo.
+  Mantener los identificadores y la sintaxis que exige el esquema OpenSpec.
+  Flujo acordado: /plan -> documentar -> aprobar -> Astra -> verificar -> cerrar.
+  Las skills back/front propias están pendientes de ejemplos y aprobación.
+  No asumir instalados plugins, capacidades, rutas ni herramientas.
+rules:
+  proposal:
+    - "Recoger el plan acordado, su alcance y exclusiones, sin replantearlo."
+    - "Separar requisitos confirmados de dudas pendientes; no inventar decisiones."
+  specs:
+    - "Describir comportamiento observable y escenarios de aceptacion."
+    - "Preservar la sintaxis de requisitos y escenarios del esquema instalado."
+    - "Clasificar deltas frente a las specs existentes; no duplicar requisitos."
+  design:
+    - "Reutilizar la arquitectura actual y explicar contratos y dependencias."
+    - "Evitar dependencias, abstracciones y refactors ajenos al alcance."
+  tasks:
+    - "Conservar casillas Markdown numeradas y asignar un ID estable a cada tarea."
+    - "Incluir goal, alcance, exclusiones, rutas, skills, responsable y dependencias."
+    - "Anadir aceptacion, verificacion, condicion de parada y limite acordado."
+    - "Aplicar por referencia las politicas de verificacion y commits de AGENTS.md."
+    - "Mantener tasks.md como lista unica; Astra coordina su actualizacion."

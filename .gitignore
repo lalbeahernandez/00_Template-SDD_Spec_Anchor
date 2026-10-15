@@ -1,0 +1,27 @@
+# Artefactos de sincronización de skillshare: conserva las skills generadas por OpenSpec.
+/.claude/skills/*
+!/.claude/skills/openspec-*/
+/.agents/skills/*
+!/.agents/skills/openspec-*/
+/.opencode/skills/*
+!/.opencode/skills/openspec-*/
+# Estado operativo de Skillshare.
+/skillshare/logs/
+/skillshare/trash/
+/skillshare/backups/
+/skillshare/skills/.metadata.json
+# Cachés y artefactos externos.
+/graft/
+/node_modules/
+/.cache/
+__pycache__/
+*.py[cod]
+# Credenciales y archivos locales.
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+# Importante: NO ignorar openspec/config.yaml, specs/, changes/ ni
+# los comandos y skills openspec-* creados por openspec init.
